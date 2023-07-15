@@ -1,0 +1,236 @@
+Lab de Arquitectura 
+
+¿QUÉ ES UN SISTEMA OPERATIVO?
+Un Sistema Operativo (SO) es un software que proporciona un acceso sencillo y seguro al soporte físico del ordenador (hardware), ocultando al usuario detalles de la implementación particular y creando la ilusión de existencia de recursos ilimitados (o abundantes).
+
+También es el de un programa que actúa como intermediario entre el usuario de la computadora y el hardware de la computadora.
+
+Aplicaciones de usuario
+—————————————-
+Sistema Operativo
+—————————————-
+Hardware
+
+Objetivos del Sistema Operativo
+	•	Ejecutar programas del usuario y resolver los problemas del usuario de manera fácil y sencilla.
+	•	Hace que la computadora sea fácil y conveniente de usar. 
+	•	Utiliza el hardware de la computadora de forma eficiente. 
+
+¿Qué funciones tienen los sistemas operativos?
+	1.	Otorgar una interfaz al usuario
+	2.	Coordinar los recursos disponibles
+	3.	Dar un buen servicio de soporte
+	4.	Gestionar las diferentes tareas
+
+Gestión del software (y hardware): La gestión del software y hardware son sus funciones principales. 
+
+Partes de un sis op 
+	1.	Manejo de Procesos
+	2.	Manejo de Memoria
+	3.	Manejo de Ficheros 
+	4.	Manejo de Dispositivos de Entrada/Salida
+	5.	Manejo de Redes 
+	6.	Intérprete de Comandos
+
+Herramientas de una interfaz gráfica  
+	⁃	Iconos 
+	⁃	Menú
+	⁃	Barra de herramientas
+	⁃	Barra de tareas
+	⁃	Ventana
+	⁃	Línea de comandos
+
+SERVICIOS PROPORCIONADOS POR EL SO
+	1.	Ejecución de Programas (programa en ejecución: ejecutable, datos, pila, contador, registros...)
+	2.	Operaciones de E/S
+	3.	Manipulación de ficheros 
+	4.	Comunicaciones 
+	5.	Detección de errores
+	6.	Asignación de recursos
+	7.	Contabilidad 
+	8.	Protección 
+
+Clasificación de sistemas operativos
+
+Tipos de sistemas operativos en función de la administración de las tareas
+
+Sistemas operativos Monotarea: Son sistemas operativos que únicamente cuentan con la capacidad para realizar una tarea al mismo tiempo. Son los sistemas más antiguos, que también llevan aparejado un CPU de menor capacidad. 
+
+Sistemas Multitarea: Son los sistemas operativos más modernos, con capacidad para el procesamiento de varias tareas al mismo tiempo. Además, también cuentan con la capacidad para ejecutar varios procesos desde varias computadoras.
+
+Tipos de sistemas operativos en función de la administración de los usuarios
+
+Sistema de administración Monousuario: Sólo pueden gestionar un usuario al mismo tiempo. Así, a pesar de que varios usuarios pueden tener acceso al sistema, únicamente un usuario puede acceder por vez y realizar y ejecutar operaciones y programas.
+
+Sistemas de administración Multiusuario: Se refiere a todos aquellos sistemas operativos que permiten el empleo de sus procesamientos y servicios al mismo tiempo. 
+
+
+
+Carga y ejecución de Programas
+	⁃	Multiusuario: Permite a dos o más usuarios ejecutar programas al mismo tiempo. Algunos sistemas operativos permiten cientos o hasta miles de usuarios concurrentes. Todos los Mainframes y minicomputadores son multiusuario, a diferencia de la mayoría de los computadores personales. Otro término para multiusuario es tiempo compartido.
+	⁃	Multiproceso: Soporta la ejecución de un programa en más de un CPU. 
+	⁃	Multimódulo: Permite que diferentes  partes de un programa se ejecuten concurrentemente.
+	⁃	De tiempo real: Responde instantáneamente a las entradas. Los sistemas operativos de propósito general, tales como DOS y UNIX no son de tiempo real.
+	⁃	Los términos multitarea y multiproceso suelen usarse indistintamente, aunque el segundo implica que hay más de un CPU involucrado.
+
+Modelo o arquitectura Cliente-Servidor
+Para que la comunicación entre dos aplicaciones en una red se lleve a cabo, uno de los programas de aplicación debe estar esperando por requerimientos por parte del programa llamador, también llamado cliente.
+
+Este modelo, un programa espera pasivamente y el otro inicia la comunicación. Se conoce como el paradigma de interacción cliente servidor.
+
+La aplicación que espera pasivamente es llamada SERVIDOR y la que inicia el contacto es llamada CLIENTE.
+
+Características de los Clientes y Servidores
+Cliente:
+	⁃	Es una aplicación normal que actúa como cliente cuando se requiere acceso remoto. 
+	⁃	Es invocado directamente por el usuario y tiene una existencia dada por la duración de la sesión del usuario. 
+	⁃	Corre locamente en el computador del usuario.
+	⁃	Inicia activamente el contacto con un servidor.
+	⁃	Ejemplo: cliente web o navegador, cliente de correo o agente de usuario de correo, cliente DNS o resolvedor de nombres. 
+
+Servidor:
+	⁃	corre un computador compartido.
+	⁃	Espera pasivamente ser contactado por clientes remotos.
+	⁃	Acepta ser co tachado por clientes diversos pero ofrece un seguro bien definido. 
+	⁃	Ejemplo: servidor web, servidor de correo, servidor de nombres. 
+
+Sistemas Operativos por lotes.
+“Los Sistemas Operativos por lotes, procesan una gran cantidad de trabajos con poca o ninguna interacción entre los usuarios y los programas en ejecución. 
+
+Estos sistemas son de los más tradicionales y antiguos, y fueron introducidos alrededor de 1956 para aumentar la capacidad de procesamiento de los programas.
+
+Algunos ejemplos de Sistemas Operativos por lotes exitosos son el SCOPE, del DC6600, el cual está orientado a procesamiento científico pesado, y el EXEC II para el UNIVAC 1107, orientado a procesamiento académico.
+
+
+Sistemas Operativos de tiempo real.
+Los Sistemas Operativos de tiempo real son aquelos en los cuales no tiene importancia el usuario, sino los procesos. 
+
+Algunos ejemplos de Sistemas Operativos de tiempo real son: VxWorks, Solaris, Lyns OS y Spectra.
+
+Sistemas Operativos de tiempo compartido.
+Permiten la simulación de que el sistema y sus recursos son todos para cada usuario. El usuario hace una petición a la computadora, esta la procesa tan pronto como le es posible, y la respuesta aparecerá en la terminal del usuario.
+
+Sistemas Operativos distribuidos.
+Permiten distribuir trabajos, tareas o procesos, entre un conjunto de procesadores. Puede ser que este conjunto de procesadores esté en un equipo o en diferentes, en este caso es trasparente para el usuario. 
+
+Sistemas Operativos de red.
+Son aquellos sistemas que mantienen a dos o más computadoras unidas através de algún medio de comunicación (fisico o no), con el objetivo primordial de poder compartir los diferentes recursos y la información del sistema.
+
+Los Sistemas Operativos de red más ampliamente usados son: Novell Netware, Personal Netware, LAN Manager, Windows NT Server, UNIX, LANtastic.
+
+
+Algunos conceptos 
+
+PnP (Plug and Play): es una tecnología para soportar la instalación de dispositivos, que pueden usarse inmediatamente después de conectarlos físicamente, sin procesos adicionales. 
+
+La capacidad PnP viene integrada en los sistemas operativos Mac OS, Windows 95 y posteriores, pero para usarlo, el BIOS del computador así como las tarjetas de expansión deben también tener soporte para PnP.
+
+Kernel: es el módulo central del sistema operativo. Es la parte que se carga primero y permanece en memoria principal. Debido a esto, es importante que el kernel sea lo más pequeño posible, pero provea todos los servicios esenciales que requieren las otras partes del sistema operativo y las aplicaciones. 
+
+Normalmente, el kernel es responsable por la administración de la memoria, los procesos, las tareas y los discos.
+
+Driver: es un programa de bajo nivel encargado de atender a un dispositivo físico, ejecutado como resultado de
+invocación desde el sistema operativo.
+
+Paquetes de Software: son combinaciones de diferentes programas que forman parte de una oferta comercial. Por ejemplo, Microsoft Windows viene “empaquetado” con muchas herramientas de software.
+
+Archivo ejecutable (código objeto): Es un archivo cuyo contenido tiene un formato que el computador puede ejecutar directamente. A diferencia de los archivos o códigos fuente, los ejecutables no pueden ser leídos por las personas.
+
+Código Abierto: Es una certificación estándar generada por la Open Source Initiative (OSI), indica que el código abierto de un programa de computación está disponible para el público en general, libre de cargo.
+
+Software Propietario: Se refiere a los programas que pertenecen y son controlados por alguien.
+
+Licencia de software: Permiso que se le otorga a un individuo o grupo, para el uso de una pieza de software.
+
+Piratería de software: Es la copia no autorizada de software. Los usuarios incurren en este delito, cuando copian programas y los distribuyen entre sus amigos y colegas, sin costo alguno.
+
+Software de dominio público: Se refiere a cualquier programa que no está sujeto a Derechos de Autor. Este software es gratuito y se puede usar sin restricciones.
+
+Freeware: Software protegido por Derechos de Autor, pero liberado por el autor para su uso gratuito.
+
+Shareware: Software que se distribuye sobre las bases de un sistema de ética. 
+
+Courseware: Software diseñado para usarse en un programa educativo.
+
+Firmware: Es software (programas o datos) que se han escrito en la memoria ROM. El firmware es una combinación de hardware y software. 
+Las memorias ROM, PROM y EPROM que tienen datos o programas grabados, son firmware.
+
+Programa es una secuencia de instrucciones dadas a la computadora.
+
+Los programas en la computadora son ejecutados por procesadores. 
+
+Un proceso es un chip en la computadora que ejecuta instrucciones de programas. Los procesadores ejecutan millones de instrucciones por segundo.
+
+Un proceso o tarea es una porción de un programa en alguna fase de ejecución.
+
+El Thread (hilo) es una parte separada de un proceso. Un proceso puede consistir de varios threads cada uno de los cuáles es ejecutado separadamente.
+
+	⁃	Un bit es la unidad más pequeña de datos. Un byte equivale a ocho bits.
+	⁃	Un megabyte son, al menos, un millón de bytes y un gigabyte son mil millones de bytes. 
+
+Notas 
+
+El disco duro no borra información sino que cambia de estado. 
+
+La memoria RAM es volátil y la ROM es no volátil. 
+Error básico: cable AC
+
+Tipos de voltaje 
+
+Cd: corriente directa 
+Ac: corriente alterna 
+
+Diferencia entre corriente Pasiva y Activa
+
+Pasiva espera que tu conectes un periférico y la activa siempre envía corriente. 
+
+Ejemplo de periféricos pasivos : 
+HDMI 
+Audio
+Red
+Usb 
+
+	⁃	El computador necesita que la energía sea Constante. 
+	⁃	La corriente se mide con un multimetro. 
+
+
+Notas: 
+El cable utp su limitación es de 100 metros.
+
+Router y switch dispositivos intermedio para conectar cables utp. 
+
+	⁃	¿Cuál es el proceso cuando se inicia un computador? 
+procesar la información y mostrarla 
+
+A la memoria virtual se me llama Paginación
+
+Los software se dividen en:
+	⁃	propietario
+	⁃	libre: este de puede modificar 
+
+Linux trabaja a nivel de archivo 
+
+La información no se borra sino que cambia de estado.
+
+Tarjeta de video afecta la resolución.
+
+Componentes integrados del board:
+	⁃	Los puertos 
+	⁃	La batería (es para mantener la configuración básica de la bios)
+	⁃	
+Cuáles ranuras de expansión trae un mother board 
+	⁃	PCI 
+	⁃	
+Como busca la información un disco mecánico?
+Por sectores
+
+Que tenemos que tener en cuenta con las memorias?  
+La frecuencia y la capacidad soporte la memoria.
+
+Componente raíz de un board 
+Es el cpu (el cpu es un Microprocesador)(unidad central de procesamiento) 
+
+
+Un monitor puede ser un periférico mixto. 
+
+Cable cruzado para conectar dispositivos del mismo tipo.

@@ -1,0 +1,110 @@
+Consultas 
+
+Mostrar todas las bd que tenemos 	
+show databases;
+
+Borrar bd	
+drop database_nomb.bd_;
+
+Crear bd 	
+create database nom.bd;
+
+Para que sepa que bd vamos a usar	
+use nom.bd;
+
+Ver las tablas que tenemos en la bd	
+show tables; 
+
+Ver campos que tiene la tabla (o sea describirlos)	
+describe nom.tabla;
+
+Borrar una tabla 	
+drop table nom.tabla;
+
+Mostar los datos guardados en una tabla 	
+select * from nom.tabla;
+
+mostrar los datos guardados especificados	
+select nombre, dirección from nom.tabla;
+
+Eliminar una bd ya existente 	
+drop database if exists nom.bd;
+
+Usar una base de datos 	
+use nom.bd;
+
+Borrar 	
+delete from nom;                 
+truncate table nom;
+
+Borrar todos los datos 	
+delete from nom.tabla;
+
+Borrar un dato 	
+delete from nom.tabla where nombre= “Alex”;
+
+Actualizar todo el campo de la tabla que digamos 	
+update nom.tabla set Apellido = “Ramírez”;
+
+Actualizar un campo de la tabla 	
+update nom.tabla set nombre = “Carmen”  where edad = 14;
+
+Actualizar varios datos 	
+update nom.tabla set campo = “”, campo = “” where campo = “”; 
+	
+
+Crear tabla: 
+create table nom(
+nombre varchar (50),
+edad int (15)
+);
+
+Insertar valores a una tabla: 
+insert into nom.tabla (nombre, edad, …)
+values (“Perla”,  19…);
+
+Otra forma de insertar datos a una tabla:
+insert into nom.tabla 
+values (“Michel”, “Santos”, …); 
+
+Insertar solo algunos datos: 
+insert into nom.tabla (edad, dirección) 
+values (22, “moca”);
+
+Nota: 
+Where nos ayuda a cumplir una condición para que el comando que estemos ejecutando se cumpla. 
+Ej: 
+select * from nom.tabla from 
+where nombre = “Michel”; 
+
+Traer algunos campos: 
+
+select nombre, edad from nom.tabla where edad = 25;
+ 
+
+Crear una tabla si no existe con clave primaria: 
+create table if not exists nom.tabla (
+Nombre varchar (50),
+Apellido varchar (50),
+Correo varchar (100),
+primary key (nombre)
+); 
+
+Unsigned : es un tipo de dato numérico que nos permite guardar sólo valores de tipo numérico positivo. 
+
+Ej: 
+create table persona (
+Id integer unsigned not null, 
+Nombre varchar (50),
+Edad integer unsigned,
+primary key (Id)
+);
+
+Operadores Operacionales 
+
+Igual = 
+Distinto <>
+Mayor > 
+Menor <
+Mayor o igual >=
+Menor o igual <=

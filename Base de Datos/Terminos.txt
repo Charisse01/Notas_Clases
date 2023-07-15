@@ -1,0 +1,28 @@
+Términos
+
+
+Base de datos: es una colección de datos relacionados. 
+
+Campo:  es el área de almacenamiento la cual nos brinda la base de datos para almacenar datos de un tipo específico.
+
+Registro:  es una colección de datos iguales o de diferentes tipos que están relacionados.
+
+Archivo: es una colección de registros relacionados siguiendo una estructura homogénea.
+
+Sql: Structered Query Language, es un lenguaje de programación estándar e interactivo para la obtención de información desde una base de datos y para actualizarla. 
+
+MySQL: es un sistema de gestión de base de datos relacional de código abierto, basado en lenguaje de consulta estructurado (sql).
+
+Nota: 
+MySQL es el motor de base de datos y 
+SQL es el lenguaje de estructura para consultas. 
+
+Formas de borrar:
+delete para borrar y seguir la sentencia 
+truncate para vaciar la tabla completa y empezar de nuevo.
+
+DROP: El comando DROP elimina una tabla de la base de datos. Cuando se utiliza DROP, se elimina permanentemente toda la tabla, junto con todos sus datos y la propia estructura. 
+
+TRUNCATE: El comando TRUNCATE también elimina datos de una tabla, pero conserva la estructura de la tabla. Cuando se utiliza TRUNCATE, se eliminan todos los datos de la tabla, pero la estructura de la tabla permanece intacta.
+
+Con DELETE, es posible eliminar registros individuales de una tabla.

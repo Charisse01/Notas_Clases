@@ -1,0 +1,39 @@
+Funciones 
+
+Upper (): para convertir el texto en mayúscula 
+
+Rpad(): se utiliza para rellenar una cadena con un carácter específico hasta almacenar una longitud determinada.
+
+Like permite hallar coincidencias dentro se una cadena. 
+- Like ‘hola%’: devuelve si es cierto el valor del campo que empiece por “hola”.
+
+- Like ‘%hola’: devuelve si es cierto el valor del campo que termine por “hola”.
+
+- Like ‘%hola%’: devuelve si es cierto el valor del campo que contenga “hola”.
+
+Lower : minúsculas cualquier argumento de entrada. 
+
+upper: mayúsculas para cualquier argumento de entrada.
+
+Initcap : escribe el primer carácter en mayúsculas.
+
+Substr : devuelve una parte de una cadena.
+
+Length : devuelve la longitud de una cadena.
+
+Instr : encuentra un carácter en una cadena.
+
+Avg: promedio 
+
+Trúncate: solo las partes enteras 
+
+Round: redondear 
+
+Ejemplo del promedio redondeado:
+ROUND(AVG(salary)); 
+
+
+
+Select * from DUAL; con esto.
+
+to_char: para formatear

@@ -1,0 +1,117 @@
+Arquitectura comp
+
+	⁃	Herman Hollerith y su poder en el procesamiento de datos
+Máquina tabuladora de Herman Hollerith fue para el censo de Estados Unidos en 1890. 
+
+	⁃	Mecanismo de Anticitera, la Computadora más Antigua del Mundo.
+
+Los restos de 82 fragmentos de bronce rescatados en el Mediterráneo, en 1901, integran hoy el mecanismo de Anticitera, un artefacto arqueológico que pone en funcionamiento más de 36 engranajes acomodados en una caja de madera y retrata prácticas de la astronomía griega antigua desde hace más de 2200 años.
+
+Encontrado por unos buscadores de esponjas marinas entre los numerosos restos de joyería, monedas y estatuas de bronce y mármol de una galera romana que naufragó frente a la costa de la isla griega que le da su nombre, el concepto fundamental alrededor del mecanismo de Anticitera.
+
+Fue descubierto entre los restos de un naufragio cerca de la isla griega de Anticitera, entre Citera y Creta, de allí su nombre y se cree que data del año 87 a. C.
+
+Historia
+Cerca de la Pascua de 1900, unos buzos pescadores de esponjas emprendieron el regreso a sus hogares desde su lugar habitual de pesca en el norte de África.
+
+Generaciones de las computadoras 
+
+	⁃	Primera generación de computadoras (1940 a 1952) 
+Creador de la primera generación de computadoras (Alan Turín). 
+
+	⁃	Segunda generación de computadoras (1956 a 1964)
+Nace alrededor de 1955 junto a los transistores.
+
+Tipos de S.O de esa generación: 
+	•	Sistemas operativos de procesamiento por lotes.
+	•	Sistema operativo de multiprogramación 
+
+Ejemplos de la segunda generación:
+	•	IBM 1620
+	•	IBM 7094
+	•	CDC 1604
+
+	⁃	Tercera generación de computadoras (1965 a 1971)
+Inició 7 de abril de 1964
+
+Sistemas operativos 
+	•	OS 360 
+	•	UNIX
+
+	⁃	Cuarta generación de las computadoras (1972 a 1980) 
+Se da inicio desde 1971 a 1981.
+
+1975 William Henry gates y paul Allan crearon Microsoft.
+
+1978 intel fabricó el microprocesador Intel 8086. 
+
+	⁃	Quinta generación de las computadoras (1983 a 2019) 
+
+
+Elementos del computador 
+	⁃	monitor
+	⁃	Teclado
+	⁃	Mouse
+	⁃	Speaker
+Hardware de infraestructura funcional 
+	⁃	Case 
+	⁃	Power supply 
+	⁃	DBD ROM Drive
+	⁃	Mainboard
+	⁃	CPU
+	⁃	CPU Fan
+	⁃	RAM
+	⁃	VGA Card
+	⁃	Sound Card
+	⁃	Hard disk
+	⁃	Reader all in one internal
+
+Algunos Elementos de controles eléctricos (hardware de infraestructuras de soporte)
+	⁃	Varilla puesta a tierra 
+	⁃	Breakers
+	⁃	Regulador / supresor de voltaje (UPS) 
+	⁃	Inversor 
+	⁃	UPS 
+
+Periférico significa alrededor de. 
+
+Periféricos de entrada 
+	⁃	teclado 
+	⁃	Mouse
+	⁃	Cámara web
+	⁃	Lápiz óptico 
+	⁃	Micrófono 
+Periféricos de salida 
+	⁃	pantalla
+	⁃	Impresora
+	⁃	Bocina 
+	⁃	Data Show 
+Periféricos de entrada/salida 
+	⁃	módem Modulación/ desmodulación 
+	⁃	Pantalla táctil 
+
+Una señal análoga es continua y puede tomar infinitos valores. 
+
+Una señal digital es discontinua y solo puede tomar dos valores o estados 0 y 1.
+
+0 significa ausencia de energía eléctrica
+1 significa que hay presencia de energía eléctrica 
+
+La computadora transmite señal análoga.
+
+La tabla ascii sirve para convertir de decimal a binario. Sirve para el intercambio de información. 
+
+Byte es el conjunto de 8 bits. 
+
+
+Microprocesador, procesador y chip es lo mismo
+
+Chip es conjunto de instrucciones que está integrado en el procesador
+ 
+Cpu 
+	⁃	Unidad de control: 
+	⁃	Unidad lógica aritmética: se encarga de los procedimientos matemáticos 
+
+El microprocesador es el dispositivo que ahora tiene que mejorar el procesador 
+
+La computadora maneja la Corriente directa.
