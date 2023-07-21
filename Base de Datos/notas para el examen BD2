@@ -1,0 +1,90 @@
+--------notas de estudio para el examen-----------
+
+CADENAS DE CARACTERES Y FECHAS
+*Las cadenas de caracteres de fechas y los valores de fecha se encierran entre commillas simples.
+*Los valores de caracter distinguen entre mayusculas, minusculas y los valores de fecha son sencible al formato.
+*El formato de visualizacion de fecha predeterminado es DD-MON-RR.
+
+SELECT last_name, job_id, department_id
+FROM employees
+WHERE last_name = 'Whalen';
+
+SELECT last_name
+FROM employees
+WHERE hire_date = '17-FEB-96';
+
+-------------------IN---------------------
+IN para probar valores en una lista
+ej: aquí solo se muestran valores donde el id del manager es igual a 100 o 101 o 201.
+
+SELECT employee_id, last_name, salary, manager_id
+FROM employees
+WHERE manager_id IN(100, 101, 201);
+
+------------------LIKE---------------------
+LIKE es para realizar busquedas.
+las condiciones de busqueda pueden contener caracteres literales o números.
+para buscar las coincidencias se usa el %.
+
+ejemplo:
+SELECT first_name FROM employees WHERE first_name LIKE 'S%';
+
+
+------------------NULL------------------------
+es para ver los valores que estan nulos.
+ej:
+SELECT last_name, manager_id
+FROM employees
+WHERE manager_id IS NULL;
+
+
+--------------operador NOT--------------------
+SELECT last_name, job_id
+FROM employees
+WHERE job_id NOT IN ('IT_PROG', 'ST_CLERK', 'SA_REP');
+
+Ese ejemplo es para saber los empleados que no son programadores, empleados o representantes de ventas.
+
+select LPAD(last_name, 15, '*') from employees WHERE last_name = 'Whalen'; 
+select RPAD(last_name, 15, '*') from employees;
+
+--------------TRIN Y REPLACE------------
+TRIM es para eliminar los 1 de principio y final
+SELECT TRIM(BOTH'1'from'123Tech111') FROM dual;
+
+REPLACE es para reemplazar la 'L' por 'Y'.
+SELECT last_name, REPLACE(last_name, 'l','y')
+FROM employees
+WHERE last_name = 'Sully';
+
+
+
+----------FUNCIONES DE CARACTERES-------------
+LOWER => minusculas
+UPPER => mayusculas 
+INITCAP => mayuscula al primer caracter
+CONCAT => concatenar dos cadenas de caracteres
+SUBSTR => devuelve una parte de una cadena
+LENGTH => devuelve la longitud de la cadena
+INSTR => encuentra un caracter en una cadena
+
+---------------Ra--------------------
+SELECT AVG(salary), MAX(salary), MIN(salary), SUM(salary)
+FROM employees;
+
+
+SELECT MIN(hire_date), MAX(hire_date) FROM employees;
+
+SELECT COUNT(commission_pct) FROM employees;
+
+
+SELECT COUNT(DISTINCT department_id) FROM employees;
+=> es contar el número de departamentos distintos en la tabla employees.
+
+ ----------GROUP BY---------------
+GROUP BY es para agrupar las filas por el valor
+SELECT department_id, AVG(salary)
+FROM employees
+GROUP BY department_id;
+
+NO se puede usar la clausula WHERE para restringir grupo, se una la palabra HAVING.
