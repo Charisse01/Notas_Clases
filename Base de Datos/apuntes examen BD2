@@ -1,0 +1,51 @@
+  LIKE
+Like '_%' -> que empiece con _
+Like '%_' -> que termine con _
+Like '%_%' -> que contenga _
+
+
+- Substraer desde el cracter 1 al 4
+select   SUBSTR('20210618@miucateci.edu.do',1,4) from dual;
+
+- En que posición se encuentra el @
+select INSTR('20210618@miucateci.edu.do','@') from dual;
+
+- Substraer el dominio
+select SUBSTR('edward44@falcondo.com.do',INSTR('edward44@falcondo.com.do','@')) dominio from dual;
+
+
+- LPAD(last_name, 15, '*') -> rellena con * quince espacios a la izquierda
+- RPAD(last_name, 15, '*') -> rellena con * quince espacios a la derecha
+
+- Selecciona todos los registros con la fecha más reciente
+select first_name,hire_date from employees A
+WHERE hire_date =(select max(hire_date) from employees B);
+
+
+- Listar los 5 empleados con mayores salarios de la empresa.
+Select first_name Nombre, last_name Apellido, salary Salario
+From (Select first_name, last_name, salary from employees order by 
+salary desc)
+Where rownum <=5;
+
+- Muestre el Total de la Nómina por departamento. 
+select D.department_name Departamento, sum(E.salary) "Total Nomina" 
+from employees E 
+join departments D on E.department_id = D.department_id 
+group by D.department_name; 
+
+
+ROUND (45.92, 0)-> 46
+ROUND (45.42, 0)-> 45
+
+TRUNC (45.92, 0)-> 45
+TRUNC (45.42, 0)-> 45
+
+to_char(valor, '999,999,999') -> dar formato a los numeros
+to_char(sysdate, 'yyyy/mm/dd') -> dar formato a una fecha
+
+
+MAX()
+MIN()
+SUM()
+AVG()
