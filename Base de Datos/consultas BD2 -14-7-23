@@ -1,0 +1,28 @@
+select avg(salary)
+from employees; 
+
+
+select count (*) from employees;
+
+select count (department_id) from employees;
+
+select count (employee_id) from employees;
+
+select  department_id from employees order by 1;
+
+select count (DISTINCT department_id)from employees;
+
+select count (department_id)from departments;
+
+estructura de datos: todo lugar donde se guardan datos.
+Funcion: es todo aquello que devuelve un valor
+
+select sysdate from dual;
+
+select trunc(sysdate - hire_date) from employees;
+
+select trunc((sysdate - hire_date)/365) from employees;
+
+select months_between (sysdate,hire_date)from employees; 
+
+select trunc(months_between (to_date('14-07-2023','dd-mm-yyyy'),  to_date('12-03-2023','dd-mm-yyyy'))) "Meses Trasncurridos"  from dual;
