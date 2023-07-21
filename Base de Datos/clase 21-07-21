@@ -1,0 +1,39 @@
+select hire_date from employees;
+
+select to_char(sysdate, 'DD/MM/YYYY HH:MI:SS') from dual;
+
+select to_date('31/03/2023 09:30:00', 'DD/MM/YYYY HH:MI:SS')+2/24 from dual;
+
+select to_date('31/03/2023 09:30:00', 'DD/MM/YYYY HH:MI:SS')+2/24 fecha from dual;
+
+select employee_id, to_char(hire_date + 7/24, 'DD/MM/YYYY HH:MI:SS') "fecha y hora" from employees where employee_id = 100;
+
+
+select * from jobs;
+
+
+select employee_id, (first_name ||' '|| last_name) as nombre, job_id, salary,
+case job_id when 'AD_PRES' then salary * 1.1
+            when 'FI_ACCOUNT' then salary * 1.05
+            when 'IT_PROG' then salary * 1.15
+else salary 
+end "Sueldo Aumentado"
+from employees;
+
+
+select id, nombre, job, salario, aumento, aumento-salario diferencia from(
+select employee_id id, first_name ||' '|| last_name nombre, job_id job, salary salario,
+case job_id when 'AD_PRES' then salary * 1.1
+            when 'FI_ACCOUNT' then salary * 1.05
+            when 'IT_PROG' then salary * 1.15
+else salary 
+end aumento
+from employees
+)
+order by diferencia desc;
+
+
+select employee_id id, first_name ||' '|| last_name nombre, 
+hire_date ingreso, trunc((sysdate-hire_date)/365) years
+from employees;
+
