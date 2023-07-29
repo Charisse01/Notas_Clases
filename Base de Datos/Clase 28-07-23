@@ -1,0 +1,51 @@
+las vistas en oracle comienzan en v$
+una vista en bd es hechar un vistaso a los datos que estan en una tabla.
+
+connect sys as sysdba
+y la contra de system 
+
+describe DBA_segments para ver las tablas que tiene oracle.
+
+select owner, table_name from DBA_tables where owner = 'HR';
+
+
+select count(*) from countries;
+para contar todos los valores aunque esten nulos. y si se pone un campo para contar no se contaran los nulos.
+
+
+select * from regions;
+
+select * from countries;
+
+select  c.country_name pais, r.region_name region from countries c, regions r
+where c.region_id = r.region_id;
+
+select count(*) from countries;
+
+select count(*) from regions;
+
+select  country_name, decode(region_id, '1','Europa', 
+'2','America',
+'3','Asia',
+'4','Africa') Region from countries;
+
+select  country_name, decode(region_id, '1', 'UCATECI') Region from countries;
+
+
+select first_name ||' '|| last_name nombre, hire_date fecha, TRUNC((sysdate - hire_date)/365) Años_de_servicio from employees;
+
+select first_name ||' '|| last_name nombre, hire_date fecha, TRUNC((sysdate - hire_date)/365) Años_de_servicio, 
+case 
+when TRUNC((sysdate - hire_date)/365) between 0 and 15 then '%5'
+when TRUNC((sysdate - hire_date)/365) between 16 and 20 then '%10'
+else '%20' end from employees; 
+
+
+
+
+
+
+
+
+
+
