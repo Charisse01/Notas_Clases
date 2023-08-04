@@ -41,6 +41,15 @@ when TRUNC((sysdate - hire_date)/365) between 16 and 20 then '%10'
 else '%20' end from employees; 
 
 
+**************TAREA INCOMPLETA***************
+select first_name ||' '|| last_name nombre, hire_date fecha, salary salario_antes, TRUNC((sysdate - hire_date)/365) Años_de_servicio, 
+case 
+when TRUNC((sysdate - hire_date)/365) between 1 and 24 then '%5' 
+when TRUNC((sysdate - hire_date)/365) between 25 and 27 then '%10'
+when TRUNC((sysdate - hire_date)/365) between 28 and 29 then '%15'
+
+else '%20' end as aumento from employees
+ORDER BY Años_de_servicio ASC;
 
 
 
