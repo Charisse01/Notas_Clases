@@ -41,27 +41,6 @@ when TRUNC((sysdate - hire_date)/365) between 16 and 20 then '%10'
 else '%20' end from employees; 
 
 
-**************query trabajado en clases*****
-Este es el código acerca de lo ultimo que hicimos en clase hoy:*                                      
-********************************************
-WITH EmployeeAños AS (
-    SELECT
-        employee_id,
-        first_name || ' ' || last_name AS nombre,
-        hire_date,
-        TRUNC((SYSDATE - hire_date) / 365) AS años_servicios,
-        salary
-    FROM employees
-)
-SELECT
-    
-    COUNT(CASE WHEN años_servicios BETWEEN 15 AND 17 THEN 1 END) AS "De 15 a 17 años",
-    COUNT(CASE WHEN años_servicios BETWEEN 18 AND 19 THEN 1 END) AS "De 18 a 19 años",
-    COUNT(CASE WHEN años_servicios BETWEEN 20 AND 21 THEN 1 END) AS "De 20 a 21 años",
-    COUNT(CASE WHEN años_servicios >= 22 THEN 1 END) AS "22 años en adelante",
-    COUNT(CASE WHEN años_servicios BETWEEN 15 AND 22 THEN 1 END) AS "Total de empleados:"
-FROM EmployeeAños;
-
 
 
 
