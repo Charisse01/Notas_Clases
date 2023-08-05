@@ -8,10 +8,83 @@ SELECT
     TRUNC((SYSDATE - hire_date) / 365) AS años_servicios,
     salary AS salario_anterior,
     CASE
-        WHEN TRUNC((SYSDATE - hire_date) / 365) BETWEEN 1 AND 24 THEN 5
-        WHEN TRUNC((SYSDATE - hire_date) / 365) BETWEEN 25 AND 27 THEN 10
-        WHEN TRUNC((SYSDATE - hire_date) / 365) BETWEEN 28 AND 29 THEN 15
+        WHEN TRUNC((SYSDATE - hire_date) / 365) BETWEEN 15 AND 17 THEN 5
+        WHEN TRUNC((SYSDATE - hire_date) / 365) BETWEEN 18 AND 19 THEN 10
+        WHEN TRUNC((SYSDATE - hire_date) / 365) BETWEEN 20 AND 21 THEN 15
         ELSE 20
     END AS Porciento_aumento
 FROM employees 
 );
+
+
+
+
+Select nombre, fecha, años_servicios, salario_anterior, Porciento_aumento, 
+to_char(salario_anterior * (1+(Porciento_aumento/100)), '999,999.99') as Nuevo_Salario
+from (
+SELECT
+    first_name || ' ' || last_name AS nombre,
+    hire_date as fecha,
+    TRUNC((SYSDATE - hire_date) / 365) AS años_servicios,
+    salary AS salario_anterior,
+    CASE
+        WHEN TRUNC((SYSDATE - hire_date) / 365) BETWEEN 15 AND 17 THEN 5
+        WHEN TRUNC((SYSDATE - hire_date) / 365) BETWEEN 18 AND 19 THEN 10
+        WHEN TRUNC((SYSDATE - hire_date) / 365) BETWEEN 20 AND 21 THEN 15
+        ELSE 20
+    END AS Porciento_aumento
+FROM employees 
+);
+
+
+
+select employee_id, first_name, job_id from employees where job_id = 'IT_PROG'
+UNION
+select employee_id, first_name, job_id from employees where job_id = 'HR_REP';
+
+
+
+
+
+SELECT sum("rango_15_17"), sum("rango_18_19"), sum("rango_20_21"), sum("rango_22mas"), 
+
+sum("rango_15_17"), sum("rango_18_19"), sum("rango_20_21") + sum("rango_22mas") total
+from(
+    TRUNC((SYSDATE - hire_date) / 365) AS años_servicios, 
+    1 "rango_15_17",
+    0 "rango_18_19",
+    0 "rango_20_21",
+    0 "rango_22mas",
+FROM employees
+where TRUNC((SYSDATE - hire_date) / 365) BETWEEN 15 and 17;
+UNION ALL
+SELECT
+    TRUNC((SYSDATE - hire_date) / 365) AS años_servicios, 
+    0 "rango_15_17",
+    1 "rango_18_19",
+    0 "rango_20_21",
+    0 "rango_22mas",
+
+FROM employees
+where TRUNC((SYSDATE - hire_date) / 365) BETWEEN 18 and 19;
+UNION ALL
+SELECT
+    TRUNC((SYSDATE - hire_date) / 365) AS años_servicios, 
+    0 "rango_15_17",
+    0 "rango_18_19",
+    1 "rango_20_21",
+    0 "rango_22mas",
+
+FROM employees
+where TRUNC((SYSDATE - hire_date) / 365) BETWEEN 20 and 21;
+UNION ALL
+SELECT
+    TRUNC((SYSDATE - hire_date) / 365) AS años_servicios, 
+    0 "rango_15_17",
+    0 "rango_18_19",
+    0 "rango_20_21",
+    1 "rango_22mas",
+
+FROM employees
+)
+where TRUNC((SYSDATE - hire_date) / 365) >= 32;
