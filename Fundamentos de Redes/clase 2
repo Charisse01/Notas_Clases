@@ -68,6 +68,18 @@ verion son los primeros 4
 una direccion ip tiene dos partes el ID de red y un ID de host.
 
 
+ISP distibuidor de internet
+
+IANA y ICANN genera y asigna matematicamente las direciones IP.
+
+direciones de host, red, broadcast
+sistemas con clase y sin clase
+
+clase 
+a 1... 126
+b 128 ... 191
+c 192... 223
+
 
 
 
