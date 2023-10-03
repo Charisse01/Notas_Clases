@@ -1,0 +1,28 @@
+clase 3 (03/10/23)
+
+capitulo 9
+- division de una red ipv4 en subredes.
+- esquemas de direccionamiento.
+- consideraciones de diseño para ipv6
+
+clase A de 0-126, la mascara de subred vendira siendo 255.0.0.0, 
+en esta clase se le piede asignar hasta 16,777,216
+
+clase B 255.255.0.0 
+clase C 255.255.255.0
+
+
+
+motivos para la division en subredes: es necesario segmentar las redes grandes en subredes mas pequeñas.
+
+broadcast: es la direccion que se paraa cin la cual yo le puede mandar un mensase sin tener que ponerle una direccion ip a cada una. 
+
+
+tcp tiene mas control
+udp no tiene control
+
+
+
+
+
+
