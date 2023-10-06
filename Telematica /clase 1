@@ -1,1 +1,83 @@
-aaaa
+modulo 1 fundamentos 
+modulo 2 protocolo IP
+modulo 3 enrutamiento
+modulo 4 traduccion de direcciones de red
+modulo 5 conmutacion de LAN
+modulo 6 seguridad ...
+modulo 7 acceso remoto
+modulo 8 redes inalambricas
+modulo 9 introduccion a ipv6
+modulo 10 administracion de redes
+
+
+--------------------------clase 1-----------------------
+objetivo general
+objetivo especifico
+piramide de aprendizaje 
+programa de la asignatura
+reglas de operacioones (celulares en silencio, clase de teoria de 5 a 7:15 30 minutos de receso y regresamos a las 7:45 
+                        practica de 5 a 6:45 receso y desde que se termine la practica nos podemos ir, puntualidad, respeto)
+
+
+sistemas numerios y conversiones 
+ -decimal 
+-binario esta basado en 0 y 1
+-hezadecimal se basa en 0 a 16, despues del 9 se representa en letas, es hasta el 15 porque empieza desde el 0
+-octal es en base a 8 del 0 al 7
+
+
+sistema dicimal es un sistema de base 10
+el binario es el base 2
+
+
+ejemplos
+
+1 1000   = 1
+01   0010  = 1
+10   1000  = 2
+001   1001  = 1
+010    1111 = 2
+
+binario a decimal 
+(se comienza desde derecha a la izquierda, o sea desde el 1, 2, 4, 8, 16, 32, 64, 128 y su suma es 255)
+1 1 1 1
+8 4 2 1= 15
+
+es un sistema de base 16 y se utiliza dieciseis simbolos del 0 al 9 y las letras de la A a la F, a ES EL 10, B es el 11, 
+C es el 12, D es el 13, E es 14, F es 15.
+
+
+cantidad de mascara de la version ipv4: 4,288,250,625 host
+
+hexadecimal a decimal (cada numero se eleva a 16)
+1 A 2 B
+
+
+A A A A
+
+
+A B C D
+
+F F F F
+
+
+octal es en base a 8
+
+
+
+
+modelo de referencia OSI
+
+7 aplicacion ()
+6 presentacion ()
+5 seccion (es la parte mas alta en cuanto a telematica, )
+4 transporte ( vemos conecciones punto apunto y confiabilidad, proporciona informacion para saber que los paquetes saldran de la red a otra para que no se corrompan los datos) 
+3 red ( se empiezan a ver definicion de ruta y direccionamiento, IP, ARP. ICMP, )
+2 enlace (que cosa se añaden a lo que es la direccion fisica, como dos sistemas se ponen de acuerdo para conectarse, estan las direcciones IP, mac, broadcast)
+1 fisica (como me conecto)
+
+en cada parte se manejan diferentes protocolos.
+
+tcp es mmas utilizado porque abarca mas que el modelo OSI.
+
+
