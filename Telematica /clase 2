@@ -1,1 +1,83 @@
+Clase 2 (26/09/23)
+
+request for comments RFC: ES un documento numerico en el que se describen y se definen protocolos. conceptos, metodos y progeamas de internet. 
+la gestiON de la RFC se realizA atraves de IETF (EL CONSORCIO DE COLABORACION.....).
+
+
+
+el internet architecture board (IAB), un comite del IETF, mantiene una liste de RFCs que describen la familia de protocolos.
+
+los protocolos son conjuntos de normas para formatos de mensaje y procedimientos...
+
+el protocolo tcp/ip surgio de un proyecto de defensa llamado DARPA en 1969. 
+
+tcp es el protocolo de control de transmision, que permite establecer una conexion y el intercambio de datos entre dos anfitriones.
+
+ip o protocolo de internet, utilixa direddiones series de cuatro octetos con formato de punto decimal.
+
+el modelo tcp/ip epermite un intercambio de datos fiablesdentro de una red.
+
+la caba superior envia los paquetes y la otra 
+...
+
+dentro del modelo TCP/IP existen cuatros niveles o capas que hay qie tener en cuentan
+red 
+internet
+transporte
+aplicacion
+
+
+
+****************************** EXPOSICION ****************************
+me toca el portocolo ARP
+  
+TCP y UDP
+EDP es mucho mas rapido pero menos fiable, manda los paquetes sin confirmar los paquetes de la direccion de donde salio.
+  
+TCP estos dos protocolos se situan en la capa de transporte del modelo TCP/IP y es la promera capa donde origen y destino se comunican 
+directamente, ya que las capas inferiores (capa de red y capa de acceso al medio) no realizan esta funcion.
+
+REDES HETEROGENEAS SON REDES QUE SON PARECIDADS QUE TIENEN LA MISMA TOPOLOGIA.
+
+TCp tiene tres mecanismos diferentes para verificar erroes y garantizar la integridad de los datos en el momento de la entrega.
+
+TCP incluye uun campo de suma de verificacion para cada segmento de datos, cuya integridad se evalua durante la transmision. 
+
+UDP solo ejecuta una verificacion de error basica utilizando una suma de verificacion. 
+
+
+UDP protocolo de datagramas de usuario: es uno de los protocolos fundamentales de internet.
+permite el envio de datagramsd sin necesidad de establecer previamente una conexion.
+
+
+  MODULO 2: IP
+
+  el protocolo de internet es un protocolo o cunjutos de reglas, para enrutar......
+
+  la direccuin IP se adjunta a cada paquete y esta informacion ayuda a lo enrutadores a enviar los paquetes...
+
+  el protocolo IP utiliza direccionamiento a traves de direcciones IP logicas de 32 bits.
+
+  
+El porotocolo IP es utilizado por gran parte de las aplicaciones de softwarw disponibles en internet, debido a que mejorla la comunicacion estre 
+dispositivos.
+
+
+verion son los primeros 4
+
+una direccion ip tiene dos partes el ID de red y un ID de host.
+
+
+ISP distibuidor de internet
+
+IANA y ICANN genera y asigna matematicamente las direciones IP.
+
+direciones de host, red, broadcast
+sistemas con clase y sin clase
+
+clase 
+a 1... 126
+b 128 ... 191
+c 192... 223
+
 
