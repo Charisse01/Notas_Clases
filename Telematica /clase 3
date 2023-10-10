@@ -22,7 +22,20 @@ tcp tiene mas control
 udp no tiene control
 
 
-
+temas de las exposiciones: 
+FTP
+FCP
+IPSEC
+HTTP
+ARP
+DHCP
+SMTP
+SNMP
+RIP
+L2TP
+SSH
+TCP
+ICMP
 
 
 
