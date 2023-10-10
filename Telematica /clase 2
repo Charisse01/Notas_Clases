@@ -76,8 +76,20 @@ direciones de host, red, broadcast
 sistemas con clase y sin clase
 
 clase 
-a 1... 126
-b 128 ... 191
-c 192... 223
+A 1... 126    255.0.0.0   direcciones que se pueden asignar es 16,581,375
+B 128 ... 191   255.255.0.0  direcciones que se pueden asignar es 65,025
+C 192... 223    255.255.255.0  direcciones que se pueden asignar es 256 
+
+127 es para lookback.
+
+La clase A se identifica por que sus primeros octetos estan encendidos. 255.0.0.0
+
+
+
+
+
+
+
+
 
 
