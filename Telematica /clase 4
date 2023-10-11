@@ -4,4 +4,97 @@ division basica en subredes
 
 192.168.1.0
 
+protocolo de enrutamiento son aqeullos ue facilitan el manejo del direccionamiento entre routers con el fin de establecer una comunicacion intercambiando
+informacion de manera dinamica sobre las rutas de las redes que puedeb alcanzar.
+
+
+estos protocolos facilitan el proceso de enrutamiento, el cual consiste en que los routers se envian entre si periodicamente informacion de las rutas,
+creando en cada una de ellos unas tablas de enrutamiento.
+
+formas de clasificar los potocolos
+exteriores (IGP)
+interiores (EGP)
+
+protocolos mas importamtes: RIP, OSPF, EIGRP
+
+
+VLSM  máscaras de subred de tamaño variablemente pequeño
+
+
+VECTOR DISTANCIA: es un algoritmo de enrutamiento que realiza iteraciones con el numero de saltos para encontrar la ruta mas corta.
+
+los protocolos de enrutamiento por estado de enlace solo generan actualizaciones cuando hay cambios en la topologia. 
+
+
+-----------------------
+router
+tabla de enrutamiento
+-IP de origen
+-IP de destino
+-datos
+-IP routers adyasentes
+-ID de protocolo
+-estado adyasente
+-tiempos de respuesta
+-autenticacion 
+-costo
+
+------------------------
+
+
+RIP fue originado por el protocolo de Xerox, el Gwinfo. poteriormente hubo otra version conocida como routed, que fue dada a conocer por
+Berkeley Standard Distribution de Unix en el año de 1982. despues RIP evolucionó como un protocolo de enrutamiento de internet.
+
+idenificacion no es lo mismo que autenticacion.
+
+RIP propaga actualizaciones de enrutamiento a traves de la tabla de enrutamiento completa cada 30 segundos, por omision.
+
+iterar es repetir.
+costo son saltos.
+
+para el transporte de mensajes RIP utiliza UDP (user datagrama protocol), un protocolo orientado a conexion. 
+
+traduccion de direcciones de red (NAT)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
