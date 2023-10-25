@@ -94,7 +94,7 @@ recivir un ACK por parte del receptorde esta manera establecer el control de err
 
 entramado: divide una trama en segmentos mas pequeños, que conllevan informacion de control paara el envio y la recepcion de datos de una red.
 este a su vez, difiere del protocolo de capa 2 utilizado en la transmision de datos.
-preeambulo, delimitdor de inicio, direccion de origen, longitud de data, relleno y .
+preeambulo, delimitdor de inicio, direccion de origen, longitud de data, relleno y fcs.
 
 
 
