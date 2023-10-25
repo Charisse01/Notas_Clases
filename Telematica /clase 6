@@ -78,18 +78,23 @@ PUENTES
 los repetidores unen segmentos ehternet a nivel fisico.
 
 
-
-
-
 semana 3
 yo
 jose luis 
 miguel anibal 
 
+**redes de area local**
+control de flujo se realizan frecuentemente en la capa de transporte y en la capa de enace de datos del modelo OSI.
+mecanismos d control de errores: FEC (forward error conrrection,), ARQ (automatic ).
 
 
+stop & wait: es una tecnica que premite que una vez que el emisor transmit un paquete de informacion no volvera ha transmitir el siguiente paquete hasta no 
+recivir un ACK por parte del receptorde esta manera establecer el control de errrores en la transmision. 
 
 
+entramado: divide una trama en segmentos mas pequeños, que conllevan informacion de control paara el envio y la recepcion de datos de una red.
+este a su vez, difiere del protocolo de capa 2 utilizado en la transmision de datos.
+preeambulo, delimitdor de inicio, direccion de origen, longitud de data, relleno y .
 
 
 
