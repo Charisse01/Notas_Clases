@@ -1,5 +1,98 @@
 clase 7 (31/10/23)
 
+aseguramiento de una red de area local (LAN)
+
+
+punto final del dispositove que le llamamos backend
+
+seguridad perimetrales: todo lo que esta alrededor del perimetro 
+
+aseguramiento de elementos LAN
+los ataques pueden originarse dentro de la red. 
+
+dos principales elementos a asegurar
+puntos finales: Host susteptibles a ataques por malware.
+infraestructura de red: dispositivos de interconexion (switchs, apps, IPPhones), susceptibles a ataques
+LAN, (MAC Overflow, Spoofing, Storm, STP, DHTP).
+
+
+seguridad tradicional de puntos finales
+tradicionalmete computadoras de la empresa dentro del perimetro.
+protegidad por un firewall a IPS.
+
+
+
+la red sin frontera 
+evolucion hacia puntos finales moviles y ligeros.
+accesos a la red puede iniciarse de multiples lugares y metodos de conexion.
+
+
+problemas para asegurar puntos finales:
+gran velocidad de dispositivos
+gran velocidad de sistemas operativos
+puntos finales dispares y, usualmente, no comparten informacion entre ellos.
+
+
+aseguramiento de puntos finales sin frontera
+proteccion antes, durante y despues de un ataque:
+- de donde provino
+- cual fue el metodo de amenaza y punto de entrega
+. que realizó la amenaza
+- como recuperarse
+
+
+proteccionde puntos finales (como prevenir)
+- tener anti-virus
+- filtrado anti-spam
+- bloqueo de sitios wen en listas negras
+- filtrado de urls
+- prevencion del periodo de datos
+
+
+usi de elementos que tenemos que tener en la red:
+AMP - ANTI MALVARE PROTECCION
+EMA - EMAIL SEGURITY APLLI
+WSA
+NAC 
+
+
+el mas utilizado en encriptacion de datos: AES 256bits
+
+malware es una de la amenaza mas comunes a puntos finales
+
+proteccion contra malware avanzada (AMP)
+
+AMP  y defensa contra amenazas administrada
+usa la nuve de inteligencia en seguridad de redes (cisco/sourcefire)
+
+aseguramiento de email y web
+
+
+cisco proporciona un dispositivo de seguridad contra correos 
+el proporciona proteccion contra el filtrado anti spam
+
+
+control de admision de red (NAC) de cisco
+atenticacion, autorizacion, auditoria (AAA) Evalua cumplimiento de politcas por dispositivo
+permite reconocer usuarios, dispositivos, roles en la red.
+bloquea y aisla (remedia), disposotivos que no cumplan (solo autenticados acceden)
+provee facil acceso a invitados
+audita y reporta quin esta en la red.
+
+
+vulnerabilidad en la capa 2
+si la capa 2 se ve comprometida, todas las capas superiores se veran afectadas
+
+
+soluciones para mitigar atraques en la capa 2
+ port segurity--seguridad de puerto
+DHCP snooping--fisgoneo DHCP
+DAI--inspeccion ARP dinamica 
+guardia de origenes IP
+
+operacion basica de un switch
+
+ejemplos de como puenden verse las tramas bajo a ataque
 
 
 
