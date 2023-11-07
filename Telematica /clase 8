@@ -1,5 +1,119 @@
 clase 8 (07/11/23)
 
+agenda:
+- justificacion del acceso
+- acceso remoto con protocoloes tradicionales 
+- redes virtuales
+- Otras herramientas de acceso remoto
+
+
+acceso remoto: El acceso remoto (o escritorio remoto) es la capacidad de acceder a un 
+ordenador o dispositivo desde otro dispositivo, en cualquier momento y desde cualquier lugar.
+con un acceso remoto tenemos la libertad de a un ordenador a travez de internet.
+
+la importancia que tiene es que logra ofrese soporte 24/7 a nuestros clientes, facilitar la transición al trabajo
+remoto y atraer empleados talentosos a tu equipo de atención.
+
+justificacion: 
+- Acceso remoto para el servicio de asistencia y soporte informático
+- Acceder a los archivos desde cualquier lugar
+- Aumentar Ia colaboración entre equipos
+
+
+Red Privada Virtual (VPN): El acceso remoto también puede tener lugar a través de VPN (Red Privada Virtual), 
+que funciona como una especie de “túnel virtual protegido” a través del cual viajan los datos.
+
+Esta red puede basarse en dos protocolos diferentes: SSL e IPSec.
+
+El SSL es específico para apliqaciones web y no requiere la instalación de software de acceso remoto. Por tanto, es más
+sencillo y su coste no es elevado. Es bastante funcional, pero algo limitado, una vez que no permite a sus usuarios compartir
+datos o hacer copias de seguridad de sus archivos.
+
+El IPSec requiere software de acceso remoto. Se considera más seguro, ya que para usarlo es necesario no solo ejecutarlo,
+sino configurarlo. En otras palabras, tiene dos capas de seguridad muy eficientes que dificultan el acceso de personas
+no autorizadas.
+
+el SSL y el IPSec son de los protocolos mas utilizados por sus caracteristicas
+
+ventajas de los servicios de acceso remoto:
+• Promueve la agilidad en la resolución de problemas.
+• Mejora la productividad de los empleados
+• Optimiza costos
+• Contribuye con la satisfacción del cliente
+
+protocolos de acceso remoto (estos no son tan seguros)
+- TELNET (TELecomunication NETwork)
+- RSH (Remote Shell)
+- SSH (Secure Shell)
+- VNC (Virtual Network Computing)
+- RDP (Remote Desktop Protocol)
+
+el TELNET Es un protocolo que sirve para emular una terminal remota, lo que significa que
+se puede utilizar para ejecutar comandos introducidos con un teclado en un equipo remoto.
+las caracteristicas que tiene son: 
+- El puerto utilizado es el 23
+- Comunicación bidireccional orientada a texto utilizando una terminal.
+- Se aplica una conexión TCP/IP
+- Envía datos en formato ASCII codificados en 8 bits.
+- Opera en un entorno cliente/servidor
+
+Se puede utilizar en varias plataformas UNIX, Windows y Linux
+El comando para iniciar una sesión Telnet:
+> telnet nombre del servidor
+> telnet 125.64.124.77
+> telnet 125.64.124.77
+
+y se hablaron de sus ventajas y desventajas.
+
+el RSH es un protocolo empleado para ejecutar comandos en ordenadores remotos.
+Se basa en el protocolo rlogin con el proceso rlogind.
+rlogin: (remote login) aplicación TCP/IP que comienza con una sesión de terminal remoto
+rlogind: proceso servidor que escucha peticiones RSH en el puerto TCP 513, permite acceso en el equipo a los comandos remotos.
+
+es desarrollado en 1995
+Es un reemplazo seguro para programas de acceso remoto como Telnet, RSH, RCP y FTP.
+
+
+el VNC es una herramienta de control remoto de ordenadores. Maneja equipos a distancia conectados por una red,
+usando el teclado y el ratón y viendo la pantalla igual que si estuviera delante de la máquina.
+
+Está basado en una estructura cliente-servidor.
+El servidor se ejecuta en el ordenador que tiene que ser controlado y el programa cliente dónde se va a controlar.
+ademas, varios clientes pueden conectarse a un servidor VNC .
+funcionamiento:
+- Un cliente se conecta al puerto 5900 para conectarse a un servidor.
+- Un servidor puede conectarse a un cliente en modo de «escucha»
+- El servidor envía pequeños rectángulos de la framebuffer para el cliente.
+
+
+RDP es un protocolo desarrollado por Microsoft para la comunicación en la ejecución de una aplicación entre un terminal (mostrando
+información del servidor) y un servidor Windows.
+El servidor recibe información dada por el cliente mediante el ratón y el teclado.
+y usa el puerto 3389/tcp.
+Características:
+• Permite el uso de colores de 8, 16, 24 y 32 bits
+• Cifrado de 128 bits
+• Permite seguridad a nivel de transporte
+• El redireccionamiento del audio permite al usuario ejecutar un proarama de audio en una ventana remota y escuchar el sonido
+en ordenador local.
+
+
+
+VPN significa "Virtual Private Network" (Red privada virtual) y describe la
+oportunidad de establecer una conexión protegida al utilizar redes públicas.
+Las VPN cifran su tráfico en internet y disfrazan su identidad en línea. Esto le dificulta a terceros
+el seguimiento de sus actividades en línea y el robo de datos. El cifrado se hace en tiempo real.
+
+funciona ocultando su verdadera dirección IP al permitirle a la red redireccionarla por un servidor remoto especial, 
+alojado por el proveedor de una VPN.
+Una VPN funciona como un filtro que convierte a todos sus datos en texto incomprensible. 
+
+En un ataque de fuerza bruta, el atacante intenta adivinar la contraseña probando sistemáticamente 
+todas las combinaciones posibles.
+historia del VPN existe desde los albores de la internet. El Departamento de Defensa de los EE.UU ya se involucraba en
+proyectos de cifrado de comunicación en internet allá por la década de los 60.
+
+ARPANET (Advanced Research Projects Agency Network).
 
 
 
