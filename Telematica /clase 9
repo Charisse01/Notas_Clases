@@ -1,0 +1,263 @@
+clase 9 (21/11/23)
+
+
+
+AGENDA
+- Estándares de redes inalámbricas IEEE 802.11
+- Componentes de la infraestructura inalámbrica
+- Operación y configuración
+- Seguridad en redes
+- inalámbricas
+
+**************************************************************************
+* que son los estandares IEEE 802 (Instituto de Ingenieros Eléctricos y Electrónicos)
+IEEE 802 es una colección de estándares de redes que cubren las
+especificaciones de la capa física y de enlace de datos para tecnologías como
+Ethernet e inalámbrica. Estas especificaciones se aplican a las redes de área
+local (LAN) y las redes de área metropolitana (MAN). IEEE 802 también ayuda
+a garantizar la interoperabilidad de múltiples proveedores al promover
+estándares que los proveedores deben seguir.
+
+IEEE 802 se divide en 22 partes que cubren los aspectos físicos y de enlace de
+datos de las redes. La familia de estándares es desarrollada y mantenida por
+el Comité de Estándares IEEE 802 LAN / MAN, también llamado LMSC. IEEE
+son las siglas de Instituto de Ingenieros Eléctricos y Electrónicos.
+
+este estandar comenzó en 1979 con un estandar de res local para interconexion de computadoras.
+el LMSC ha elaborado mas de 70 estandares para la IEEE 802.
+
+Se deciden y asignan «grupos de trabajo» individuales a cada área con
+el fin de proporcionar a cada área un enfoque aceptable. Las
+especificaciones IEEE 802 también dividen la capa de enlace de datos
+en dos capas diferentes: una capa LLC y una capa MAC.
+
+Los estándares se pueden encontrar en un PDF proporcionado por
+LMSC hasta seis meses después de su publicación. Todos los estándares
+permanecen en su lugar hasta que se reemplazan con otro documento
+o se retiran.
+
+
+mac de telecomunicacion y la otra mac es lo que traen los equipos internamente.
+
+
+LMSC se formó en 1980 para estandarizar los protocolos de red y
+proporcionar un camino para hacer dispositivos compatibles en
+numerosas industrias.
+
+Sin estos estándares, los proveedores de equipos podrían fabricar
+hardware de red que solo se conectaría a ciertas computadoras. Sería
+mucho más difícil conectarse a sistemas que no utilicen el mismo
+conjunto de equipos de red. 
+
+***********************************************************
+Infraestructura de la res inalambrica
+NOTA: las redes inalambricas son las mas seguras.
+
+Una red inalámbrica (conocida en inglés cono wireless network) es Ia conexión
+de nodos que es dada por medio de ondas electromagnéticas, sin que sea necesario el
+uso de una red cableada o alámbrica.
+
+**********************************************************
+Las ondas electromagnéticas se definen como las que no requieren de un medio físico
+para transmitirse y propagarse, éstas se transmiten a través del vacío.
+
+Como ejemplos de ondas electromagnéticas tenemos:
+-Luz visible
+-Ondas de Radio
+-Señales móviles
+-Televisión Análoga y Digital
+-Señal Satelital
+
+Las ondas electromagnéticas son de diferentes tipos, y todas se definen dentro de unos
+rangos de frecuencias que se presentan dentro del espectro electromagnético. 
+
+ventajas:
+Es más fácil de instalar que una red cableada, ya que no depende de las
+limitaciones físicas del edificio. No se requiere de abrir paredes o de perforar las
+instalaciones del edificio para su montaje. 
+Puede ser instalada en lugares complicados por su distribución.
+Perrnite la conexión de ññúltiples dispositivos móviles.
+
+desventajas:
+Tienen mayores inconvenientes de seguridad que las redes cableadas, ya que al
+inforrnáticos o bien a tener problennas de acceso no autorizado.
+El ancho de banda suele ser rnenor que en el de las redes cableadas.
+
+
+******************************************************
+
+Aplicaciones de las redes inalárnbricas
+Las bandas más importantes con aplicaciones inalárnbricas, del rango de
+frecuencias que abarcan las ondas de radio, son la VLF (comunicaciones en
+navegación y submarinos), LF (radio AM de onda larga), MF (radio AM de onda
+media), HF (radio AVI de onda corta), VHF (radio FNI y TV), UHF (TV).
+
+Mediante las microondas terrestres, existen diferentes aplicaciones basadas en
+protocolos corno Bluetooth o ZigBee para interconectar ordenadores portátiles,
+PDAs, teléfonos u otros aparatos. También se utilizan las microondas para
+comunicaciones con radares (detección de velocidad u otras características de
+objetos remotos) y para la televisión digital terrestre.
+
+Las microondas por satélite se usan para la difusión de televisión por satélite,
+transrnisión telefónica a larga distancia y en redes privadas, por ejemplo.
+LOS infrarrojos tienen aplicaciones la comunicación a Corta distancia de IOS
+ordenadores con sus periféricos. También se utilizan para mandos a distancia, ya
+que así interfieren Otras señales electromagnéticas.
+
+**************************************************************
+tipos de redes inalambricas
+Según su cobertura, las redes inalámbricas pueden clasificarse en diferentes tipos:
+WPAN: Wireless Personal Area Network
+En este tipo de red de cobertura personal, existen las siguientes tecnologías
+• HomeRF (estándar para conectar todos los teléfonos móviles de la casa y los
+ordenadores mediante un aparato central)
+• Bluetooth (protocolo que sigue la especificación IEEE 802.15.1)
+• ZigBee (basado en Ia especificación IEEE 802.15.4)
+• RAD
+El alcance típico de este tipo de redes es de unos cuantos metros, alrededor de los 10
+metros máximo. La finalidad de estas redes es comunicar cualquier dispositivo personal
+(ordenador, terminal móvil, PDA, etc.)
+
+WLAN: Wireless Local Area Network
+Una WLAN es una red LAN implementada sobre medios inalámbricos en lugar de cables.
+Es una de las redes más comunes usadas en hogares en la actualidad. Se caracteriza por
+tener alcances grandes y dedicados a areas correspondientes a edificios.
+La tecnología caracteristica de las WLAN es Wi-Fi, cuyo estándar lo podemos encontrar
+definido como 802.1 1.
+
+caracteristicas de los direferentes estandares
+802.11a            54 mbps
+802.11b            11 mbps                
+802.11g            54 mbps  
+802.11n            600 mbps
+802.11ac           1.3 gbps
+802.11ad           7 gbps
+
+*********************************************
+WMAN: Wireless Metropolitan Area Network
+En las redes de área metropolitana se encuentran las siguientes tecnologías:
+
+• WiMAX (Worldwide Interoperability for Microwave Access, es decir,
+Interoperabilidad Mundial para Acceso con Microondas), un estándar de
+comunicación inalámbrica basado en la norma IEEE 802.16. WiMAX es un protocolo
+parecido a Wi-Fi, pero con más cobertura y ancho de banda.
+• LMDS (Local Multipoint Distribution Service).
+
+WWAN: Wireless Wide Area Network
+Una WWAN difiere de una WLAN (Wireless Local Area Network) en que usa tecnologías
+de red celular de comunicaciones móviles como WiMAX (aunque se aplica mejor a Redes
+WMAN). 
+Las tecnologías conocidas son:
+UMTS (Universal Mobile Telecommunications System)
+GPRS
+EDGE
+CDMA2000
+GSM
+CDPD
+Mobitex
+HSPA
+3G y 4G
+************************************************
+
+componentes de redes inalambricas
+- placa de red inalambrica (recibir y enviar informacion en tre las comp de la res)
+- puntos de acceso ()
+- router inalambrico (se encarga de dar acceso)
+- antena ()
+
+*************************************************
+tipos de antenas
+- direccionales 
+- omnidireccionales
+- sectorial
+
+- Direccional: Orienta la señal en una dirección muy determinada con un haz
+estrecho pero de largo alcance.
+- Omnidireccional: Orienta la señal en todas direcciones con un haz amplio pero de
+corto alcance. Ideal para cubrir áreas amplias. Éstas envían la información a los 360
+grados, por lo que podemos compararla con una bombilla que emite luz en todas
+direcciones, Tiene menor alcance que las antenas direccionales.
+- Sectorial: Es la mezcla de las dos antenas anteriores, emite un haz mas amplio que
+una direccional , pero no es tan amplio como el de una omnidireccional
+
+*******************************************
+Acces point o punto de acceso Inalámbrico: es un dispositivo que permite
+interconectar dispositivos de comunicación inalámbrica para formar una red
+inalámbrica, también puede integrar las redes inalámbricas con las redes cableadas.
+
+El access point tiene tres tipos de acceso:
+• Modo Root: Este es el modo mas común donde múltiples usuarios acceden al
+punto de acceso al mismo tie po.
+• Modo Repeater: se utiliza cuan ose quiere extender mas allá Ia señal.
+• Modo Bridge: Se hace un puente inalámbrico entre dispositivos, dos puntos de
+acceso en modo Bridge solo hablaran entre ellos, este tipo de conexión es útil
+cuando están conectados dos edificios separados sin cables.
+
+**********************************************
+Bridge o puente de red: Es un dispositivo de interconexión de redes que opera en la
+capa 2 (nivel de enlace de datos) del modelo OSI. Este interconecta dos segmentos de
+red haciendo paquetes de datos con base en Ia dirección fisica de destino solicitada.
+
+Tipos de Bridge
+• Locales: Sirven para enlazar directamente dos redes físicamente cercanas.
+• Remotas: Se conectan en parejas enlazando dos o mas redes locales, se conectan a
+través de un WDS  Wireless Distribution System).
+
+*********************************************
+
+Dispositivos Cliente inalámbricos: Son todos aquellos dispositivos que pueden conectarse a una red
+inalámbrica y que brindan una o varias utilidades al usuario.
+
+Como ejemplos de éstos, podemos encontrar:
+Computadoras de escritorio
+Computadores Portátiles
+Teléfonos inteligentes
+Televisores inteligentes
+Tablets
+
+********************************************
+
+¿Qué es la seguridad de red?
+La seguridad de red es cualquier actividad diseñada para proteger el acceso, el uso y la
+integridad de la red y los datos corporativos.
+La seguridad de red combina varias capas de defensa en el perímetro y la red. Cada
+capa de seguridad de red implementa políticas y controles. Los usuarios autorizados
+tienen acceso a los recursos de red, mientras que se bloquea a los usuarios maliciosos
+para evitar que ataquen vulnerabilidades y amenacen Ia seguridad.
+
+existen varios tipos de seguridad de red como son:
+firewalls o cortafuegos
+deteccion y prevencion de intrusiones 
+control de acceso de red (NAC)
+
+******************************************
+¿Que son los protocolos de seguridad de WIFI?
+Los protocolos de seguridad de Wi-Fi usan tecnología de cifrado para asegurar las redes
+y proteger los datos de sus clientes. Las redes inalámbricas suelen ser menos seguras
+que las cableadas, por lo que los protocolos de seguridad inalámbricos son cruciales
+para que esté seguro en linea.
+Las herramientas de cifrado de datos protegen los datos confidenciales, porque los
+codifican para hacerlos ilegibles. Los protocolos de seguridad de Wi-Fi usan claves
+criptográficas para aleatorizar los datos y hacerlos indescifrables.
+
+Todos los protocolos de seguridad de Wi-Fi están certificados por la Wi-Fi Alliance, la
+organización sin ánimo de lucro propietaria de la marca comercial Wi-Fi. Actualmente
+existen cuatro protocolos de seguridad inalámbrica:
+Privacidad equivalente por pable (WEP)
+Acceso Wi-Fi protegido (WPA).
+Acceso Wi-Fi protegido 2 (WPA 2).
+Acceso Wi-Fi protegido 3 (WPA 3).
+
+*****************************
+
+
+
+
+
+
+
+
+
+
+
+
