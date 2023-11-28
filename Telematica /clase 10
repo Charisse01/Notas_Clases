@@ -68,6 +68,49 @@ SNMP consta de:
 administración (MIB).
 
 
+¿Qué es IPv6?
+IPv6 es un protocolo de internet que ofrece numerosas mejoras en comparación con su
+predecesor, IPv4. La longitud de las direcciones IPv6 es mayor que las direcciones IPv4, lo que permite una
+mayor cantidad de direcciones disponibles en Ia red.
+
+Además, IPv6 incorpora una serie de características dediseño que mejoran la seguridad, la eficiencia y la
+escalabilidad de la red. 
+
+Algunas de estas características incluyen el soporte para paquetes más
+grandes, la incorporación de IPSec en el protocolo, la autoconfiguración segura y la eliminación de la
+necesidad de NAT en Ia red. Estas características hacen que IPv6 sea una tecnología esencial para el futuro de Internet y su crecimiento.
+
+IPv6 es importante debido al creciente número de dispositivos conectados a Internet, como smartphones,
+tabletas, ordenadores, sensores y electrodomésticos inteligentes. Con el agotamiento del espacio de
+direcciones IPv4, la implementación de IPv6 se ha vuelto cada vez más crítica para la continuidad y el crecimiento
+de la red global.
+
+Características de IPv6:
+Longitud de la dirección
+Tipos de direcciones
+Soporte de paquetes más grandes
+Seguridad mejorada
+Autoconfiguración
+Simplificación de encabezados
+Enrutamiento más eficiente
+Mayor flexibilidad de asignación dedirecciones
+Soporte para movilidad
+Mayor interoperabilidad
+
+
+ipv4: 32 bits
+ipv6: 128 bits
+
+tipos de direcciones ipv6:
+unicast, multicast, b
+
+
+direrencias entre ipv4 y ipv6:
+Numero dc direcciones disponibles
+Enrutamiento
+Configuración de red
+Protocolos de transporte
+
 
 
 
