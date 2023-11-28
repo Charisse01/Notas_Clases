@@ -30,6 +30,47 @@ Mantenimiento y actualización de la documentación de la red
 Garantizar Ia disponibilidad, Ia integridad y Ia confiabilidad de la información. (estos son los tres pilares de la seguridad informatica)
 
 
+El administrador de red es el profesional de TI que asegura que puedas acceder a tus datos, realizar tu trabalo de forma
+eficiente y disfrutar de todos los beneTicios que proporcionan las redes, entre otras cosas.
+
+El sector de las TI (que incluye la administración de redes y telecomunicaciones) emplea a miles de profesionales en
+todo el mundo y las previsiones futuras son de una alta demanda de estos pertiles laborales.
+
+La especialización ofrece la oportunidad de entrar en el mundo de la tecnología con opciones laborales
+relacionadas con la configuración, administración y reparación de sistemas y redes informáticas.
+
+PROTOCOLO SNMP
+Simple Network Management Protocol (SNMP) es un protocolo de capa de
+aplicación basado en IP que intercambia información entre una solución de
+administración de red y cualquier dispositivo habilitado para SNMP.
+
+Los proveedores de hardware de red incrustan automáticamente el soporte SNMP en sus dispositivos, 10 que
+lo convierte en una forma accesible de supervisar la red. También es eficiente en la gestión del rendimiento de la red, la
+búsqueda de problemas y Ia gestión del crecimiento de Ia red.
+
+SNMP se puede considerar el lenguaje de administración de red, con la mayoría de los componentes de red que tienen
+capacidad SNMP integrada, y con la mayoría del software de monitoreo de red, SNMP en su lista de características, Simple
+Network Management Protocol se ha convertido en la opción de facto en la administración de red.
+
+SNMP se puede definir como un protocolo de nivel de aplicación diseñado para supervisar la infraestructura de red y
+proporciona a los administradores visibilidad centrada en el dispositivo. No es propietario, por lo que es fácil monitorear
+dispositivos de diferentes proveedores simultáneamente utilizando el mismo software.
+
+El SNMP recoge la información a través del sondeo. Su software de monitoreo de red actúa como cliente, y envía
+paquetes de sondeo UDP al servidor SNMP, o agente, un fragmento de código que se ejecuta en el propio dispositivo. 
+
+Componentes basicos y sus funcionalidades
+SNMP consta de:
+• Administrador SNMP
+• Dispositivos administrados
+• Agente SNMP
+• Base de datos de información de administración denominada de otro modo Base de información de
+administración (MIB).
+
+
+
+
+
 
 
 
