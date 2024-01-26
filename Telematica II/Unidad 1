@@ -1,1 +1,132 @@
-a 
+-------------------------------------------
+OSPF (El camino mas corto primero)
+-------------------------------------------
+
+OSPF --- incluye un area unica y una multiárea.
+OSPFv2 --- se utiliza para redes IPv4.
+OSPFv3 --- se utiliza para redes IPv6.
+*El enfoque principal de todo este módulo es OSPFv2 de área única*
+
+El protocolo OSPF es un protocolo de enrutamiento de estado de enlace que se desarrolló como una alternativa al Protocolo de Información de Enrutamiento del Vector de Distancia (RIP). 
+
+RIP fue un protocolo de enrutamiento aceptable en los primeros días de las redes e Internet. 
+
+OSPF es un protocolo de enrutamiento de estado de enlace que utiliza el concepto de áreas. Un administrador de red puede dividir el dominio de enrutamiento en áreas distintas que 
+ayudan a controlar el tráfico de actualización de enrutamiento.
+
+------------------------
+Componentes de OSPF
+------------------------
+* Mensajes de protocolo de enrutamiento
+Los routers que ejecutan OSPF intercambian mensajes para transmitir información de enrutamiento 
+por medio de cinco tipos de paquetes. 
+1. Paquete Hello
+2. Paquete de descripcion de la base de datos (DBD)
+3. Paquete de solicitud de estado de enlace (LSR)
+4. Paquete de actualizacion de estado de enlace (LSU)
+5. Paquete de acuse de recibo de estado de enlace (LSAck)
+
+Estos paquetes se usan para descubrir routers vecinos y también para intercambiar información de enrutamiento, a fin de mantener información precisa acerca de la red.
+
+* Estructuras de datos
+Los mensajes OSPF se utilizan para crear y mantener tres bases de datos OSPF:
+
+Base de datos de adyacencia - crea la tabla de vecinos. (show ip ospf neighbor)
+Base de datos de estado de enlace (LSDB) -crea la tabla de topología. (show ip ospf database)
+Base de datos de reenvío -crea la tabla de enrutamiento. (show ip route)
+
+Estas tablas contienen una lista de routers vecinos para intercambiar información de enrutamiento.
+
+
+* algoritmo
+El router arma la tabla de topología; para ello, utiliza los resultados de cálculos realizados a partir del algoritmo SPF (Primero la ruta más corta) de Dijkstra. 
+El algoritmo SPF se basa en el costo acumulado para llegar a un destino.
+
+-----------------------------------
+Funcionamiento de estados de enlace
+-----------------------------------
+Los routers OSPF realizan el siguiente proceso genérico de routing de estado de enlace para alcanzar un estado de convergencia:
+
+1. Establecimiento de adyacencias de vecinos
+2. Intercambio de anuncios de estado de enlace
+3. Crear la base de datos de estado de vínculo
+4. Ejecución del algoritmo SPF
+5. Elija la mejor ruta
+
+
+-----------------------------------
+OSPF de área única y OSPF multiárea
+-----------------------------------
+Un área OSPF es un grupo de routers que comparten la misma información de estado de enlace en sus LSDB. 
+OSPF se puede implementar de una de estas dos maneras:
+
+- de área única OSPF : todos los enrutadores están en un área. La mejor práctica es usar el área 0.
+- Multiárea OSPF:  OSPF se implementa mediante varias áreas, de manera jerárquica. Todas las áreas deben conectarse al área troncal (área 0). 
+Los routers que interconectan las áreas se denominan “routers fronterizos de área” (ABR).
+Aquí OSPF puede dividir un dominio de enrutamiento grande en áreas más pequeñas a fin de admitir el enrutamiento jerárquico.
+
+
+-----------------------
+Tipos de paquetes OSPF
+----------------------
+
+Tipo 1: Paquetes Hello - se usa para establecer y mantener la adyacencia con otros routers OSPF.
+Tipo 2: Paquete de descripción de base de datos (DBD): - contiene una lista abreviada de la LSDB del router emisor, y los routers receptores la usan para compararla con la LSDB local. Para crear un árbol SPF preciso, 
+la LSDB debe ser idéntica en todos los routers de estado de enlace dentro de un área.
+Tipo 3: Paquete de solicitud de estado de enlace (LSR): - los routers receptores pueden requerir más información sobre cualquier entrada de la DBD mediante el envío de un LSR.
+Tipo 4:Paquete de actualización de estado de enlace (LSU) - se utiliza para responder a los LSR y para anunciar nueva información. LSUs contienen varios tipos diferentes de LSA.
+Tipo 5: Paquete de acuse de recibo de estado de enlace (LSAck): - cuando se recibe una LSU, el router envía un LSAck para confirmar la recepción de la LSU. El campo de datos del LSAck está vacío.
+
+DE FROMA MAS RESUMIDA
+1. Hello---Descubre los vecinos y construye adyacencias entre ellos
+2. Descriptores de bases de datos (DBD)---Controla la sincronización de bases de datos entre routers.
+3. Solicitud de estado de enlace (LSR)---Solicita registros específicos de estado de enlace de router a router
+4. Actualización de estado de enlace (LSU)---Envía los registros de estado de enlace específicamente solicitados
+5. Acuse de recibo de estado de enlace (LSAck)---Reconoce los demás tipos de paquetes
+
+
+
+------------------------------------------------------------------------------------
+Cuando un router OSPF se conecta inicialmente a una red, intenta hacer lo siguiente:
+------------------------------------------------------------------------------------
+Crear adyacencias con los vecinos
+Intercambiar información de enrutamiento
+Calcular las mejores rutas
+Lograr la convergencia
+
+
+Los estados en los que OSPF progresa mientras intenta alcanzar la convergencia:
+Estado incativo
+Estado Init
+Estado Two-Way
+Estado ExStart
+Estado de intercambio
+Estado Loading
+Estado Full
+
+
+---------------------------------------------------------------------------------------
+Para comprender el problema de las adyacencias múltiples, se debe estudiar una fórmula:
+---------------------------------------------------------------------------------------
+n (n — 1)/2 
+
+Ej:
+5 (5 – 1) / 2 = 10
+se resta lo del parentesis y se multiplica por el numero de adelante y luego se divide entre 2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
