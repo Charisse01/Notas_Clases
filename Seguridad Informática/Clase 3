@@ -1,3 +1,163 @@
 clase 3 (02/02/24)
 
 
+• La confidencialidad, en informática, es un principio
+fundamental de la seguridad de la información que
+garantiza el necesario nivel de secreto de la información y
+de su tratamiento, para prevenir su divulgación no
+autorizada cuando está almacenada o en tránsito.
+
+
+• Integridad: Este término, en seguridad informática, se puede
+definir como la garantía de exactitud y fiabilidad
+de la información. Asegurando la integridad de la
+información y los datos se cpnsigue prevenir
+cualquier modificación no autorizada de esta.
+
+• Disponibilidad: es la característica o capacidad de asegurar la fiabilidad y el acceso
+oportuno a los datos y recursos que los soportan por parte de los individuos
+autorizados, es decir, que lo necesitan para desenvolver sus actividades.
+
+Mecanismod de seguridad: IDS, IPS.
+
+IDS: sistema de detección de intrusiones: es una aplicación usada para detectar
+accesos no autorizados a un ordenador o a una red, es decir, son sistemas que
+monitorizan el tráfico entrante y lo cotejan con una base de datos actualizada de
+firmas de ataque conocidas. Ante cualquier actividad sospechosa, emiten una
+alerta a los administradores del sistema han de tomar las medidas
+oportunas. Estos accesos pueden ser ataques esporádicos realizados por usuarios
+malintencionados o repetidos cada cierto tiempo, lanzados con herramientas
+automáticas. Estos sistemas sólo detectan los accesos sospechosos emitiendo
+alertas anticipatorias de posibles intrusiones, pero no tratan de mitigar la
+intrusión. Su actuación es reactiva,
+
+
+IPS: (Instrusion Prevention System) o sistema de prevención de intrusiones: es
+un software que se utiliza para proteger a los sistemas de ataques e
+intrusiones. Su actuación es preventiva. Estos sistemas llevan a cabo un
+análisis en tiempo real de las conexiones y los protocolos para determinar si se
+está produciendo o se va a producir un incidente, identificando ataques según
+patrones, anomalías o comportamientos sospechosos y permitiendo el
+control de acceso a la red, implementando políticas que se basan en el
+contenido del tráfico monitorizado, es decir, el IPS además de lanzar alarmas,
+puede descartar paquetes y desconectar conexiones.
+
+
+-------------------------------------------------------------
+
+CAPAS DE SEGURIDAD
+• Hay diferentes autores, modelos y conceptos sobre las
+capas que se deben definer en Seguridad informatica.
+Unos optan por definirlas al igual que los modelos OSI o
+TCP/IP. Otros la definen en base al modelo de seguridad
+en profundidad todo para salvaguardar la
+Confidencialidad, integridad y disponibilidad de los datos.
+
+anillo de seguridad a nivel informatrico : es el tema de la seguridad fisica y la disuacion. 
+primer anillo de seg: guardias, camaras, etc.
+
+
+• ¿Qué son Capas de seguridad?
+Se consideran capas de seguridad a los componentes de
+un enfoque de ciberseguridad llamado defensa en profundidad.
+Este concepto fue desarrollado originalmente dentro del campo de las artes militares y
+descubriendo sus antecedentes, podemos ver cómo implementarlo en la actualidad:
+
+
+Como Hanibal contra las legiones romanas, las trincheras de la primera
+guerra mundial o la batalla de Normandía, nos encontramos con una
+estrategia que consiste en retrasar, en vez de prevenir un ataque.
+
+¿Cómo? Estableciendo varias líneas de defensa consecutivas, en vez de
+utilizar una línea de defensa definitiva.
+
+La ventaja de esta estrategia, es que podemos entregar territorio en un
+plano defensivo, mientras que forzamos al atacante a complicar el ataque y
+su logística, teniendo que atravesar varias líneas de defensa a través de un
+territorio más extenso.
+
+
+capas de seguridad/defensa en profundidad
+personas (guardias)
+perimetro (camaras de seg)
+la red ()
+dispositivos ()
+aplicaciones (el que diseño la aplicacion, el que diceño la red para poder acceder)
+data ()
+
+
+
+
+
+capas de seguridad:
+- fisica
+- logica
+- servidores 
+........................................
+
+
+* Firewall 
+Un firewall, es considerado un dispositivo de capa 3 que filtra el tráfico entre 2 0 más redes.
+En la actualidad se promueven distintos firewall siendo unos basados en hardware otros en
+software, pero lo que resulta importante es la forma como gestibnamos el sistema operativo
+que permite filtrar el tráfico TCP, UDP, ICMP, IP, entre Otros, lo importante es como decidir si
+un paquete pasa, se modifica, se convierte o se descarta. Los firewalls han constituido una
+primera línea de defensa en seguridad de la red durante más de 25 años.
+
+funciona en la capa 3 del modelo OSI y capa 2 del stack de protocolos TCP/IP como filtros de paquetes IP.
+
+* Proxy
+trabaja en la capa 7 (aplicacion) del modelo osi.
+Un proxy es un servicio que sirve de intermediario entre un ordenador conectado a Internet
+y el servidor que está accediendo. Trabaja en el nivel de aplicación (capa 7 del modelo OSI),
+de manera que los filtrados, se pueden adaptar a características propias de los protocolos de
+este nivel. Por ejemplo, si se trata de tráfico HTTP, FTP o SMTP, se pueden realizar filtrados
+según la URL a la que se está intentando acceder. 
+
+* Red DMZ
+En seguridad informática hace referencia a la Zona Desmilitarizada (DMZ) su origen data de
+la guerra fría, es una subred que está detrás del firewall pero que está abierta al público que
+provee servicios como WEB, EMAIL o FTP, además no puede acceder a la red LAN (GARRIDO PEÑALVER, 2017).
+
+* Red LAN
+La Red de Área Local (LAN) al contar con dos servidores que proveen Directorio Activo, estos
+permitirán la administración de los usuarios, una vez aplicadas las políticas de seguridad a
+los equipos, mediante el uso de las directivas de grupo (GPO), además contarán con
+acceso a internet, por los servicios ofrecidos desde la DMZ, en cuanto al tráfico de red se
+realizan filtrados por medio del servicio de Proxy.
+
+
+La defensa en profundidad, es un método que busca disminuir las vulnerabilidades en los
+sistemas informáticos, la cual consiste en aplicar seguridad por capas a un sistema, su
+función principal es de aumentar la posibilidad de detectar intrusos y disminuir las
+oportunidad que los intrusos logren su propósito.
+
+En una empresa se debe tener presente, que el activo más valioso son los datos, por esta
+situación se los lleva al final de la metodología para aplicar medidas de seguridad que
+protejan los mismos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
