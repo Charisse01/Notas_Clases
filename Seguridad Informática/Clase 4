@@ -1,0 +1,182 @@
+Clase 4 (09/02/24)
+
+Introduccion a la criptografía
+
+Un sistema de comunicación seguro debe proporcionar:
+• Autenticación de cada parte
+• Confidencialidad de datos
+• Integridad de datos
+• No repudio
+• Para ello, se usan técnicas criptográficas que tratan de cuidar esa entradas a los sistemas.
+
+
+**Clasificación de los sistemas criptográficos
+Por el tipo de operaciones (reversibles) de transformación:
+• Sustitución: A cada elemento del texto claro se le asigna otro elemento
+en el texto cifrado
+• Transposición/permutación: Reordenar los elementos del texto claro
+• Sistemas producto: Varias etapas de sustituciones y transposiciones
+• Numérica: Los elementos del texto claro se tratan como números a lo
+que se aplican algunas propiedades y relaciones matemáticas
+
+Por el número de claves usadas:
+• Simétrico o de clave secreta: Misma clave para cifrar y descifrar.
+• Asimétrico o de clave pública: Una clave para cifrar, otra para descifrar
+
+Por la forma en la que se procesan los mensajes:
+• De bloque: Procesa un bloque del mensaje cada vez, produciendo un
+bloque de salida por cada bloque de entrada
+• De flujo: Procesa los elementos de entrada de forma continua,
+produciendo un elemento de salida cada vez
+
+
+**Criptoanálisis
+• Es el proceso de intentar descubrir el texto claro o la clave a partir de la información disponible.
+
+Un esquema de cifrado es computacionalmente seguro si el texto cifrado generado por el esquema cumple uno o
+ambos de los siguientes criterios:
+• El coste de romper el cifrado excede el valor de la información
+• El tiempo requerido para romper el cifrado excede la vida útil de
+la información.
+
+
+Tipos de criptoanálisis
+Los ataques se clasifican en función del tipo de información disponible para el atacante, asumiendo que
+el algoritmo de cifrado es conocido.
+
+tipos:
+• Solo texto cifrado (ciphertext-only): el atacante solo tiene acceso al
+texto cifrado.
+• Texto claro conocido (known-plaintext): el atacante tiene acceso a
+un conjunto de textos cifrados de los cuales se conoce el
+correspondiente texto claro.
+• Texto claro elegido (chosen-plaintext): el atacante puede obtener
+los textos cifrados correspondientes a textos claros arbitrarios.
+• Texto cifrado elegido (chosen-ciphertext): el atacante puede
+obtener los textos claros correspondientes a textos cifrados
+arbitrarios.
+
+pos: es punto de venta.
+
+
+**Técnicas de criptoanálisis
+• Análisis de frecuencias: Estudiar la frecuencia de aparición de letras o patrones en el texto cifrado
+• Diccionario: Usar muchas contraseñas (≠claves) comunes.
+• Colisiones de claves: Aprovechar la paradoja del cumpleaños para producir 
+colisiones de claves que revelen información acerca del texto claro.
+• Criptoanálisis diferencial: Analizar cómo las diferencias en el
+texto claro se corresponden con diferencias en el texto cifrado.
+• Criptoanálisis lineal: Usar aproximaciones lineales del
+comportamiento para derivar bits de la clave o del texto claro.
+• Claves relacionadas: Usar textos cifrados con dos claves
+diferentes con alguna relación (ej. compartiendo algunos bits).
+• Claves débiles: Aprovechar claves que hacen que el cifrado
+funcione de alguna forma no deseable.
+• Combinación de técnicas: Derivar algunos bits de la clave o del
+texto plano con criptoanálisis y el resto por fuerza bruta.
+
+
+
+**Ataques de fuerza bruta
+Implican intentar todas las posibles claves hasta que se obtenga una traducción inteligible del texto cifrado en
+texto claro.
+
+
+• cifrado simétrico: usa llave privada
+• cifrado asimetrico: usa llave pública 
+
+
+**Requisitos del cifrado simétrico
+Hay dos requisitos para el uso seguro del cifradosimétrico
+• Que el algoritmo de cifrado sea seguro
+• Que emisor y receptor hayan obtenido una copia de la clave secreta de forma segura y que permanezca segura
+
+La seguridad del cifrado simétrico no depende de que el algoritmo sea secreto, sino de que lo sea la clave
+
+
+**Cifrado simétrico de bloque
+EI cifrado de bloque procesa la entrada de texto claro en bloques de tamaño fijo y produce un bloque de texto
+cifrado de igual tamaño para cada bloque de entrada. 
+
+Los algoritmos de cifrado simétrico de bloque más importantes son:
+• Data Encryption Standard (DES)
+• Triple DES (3DES)
+• Advanced Encryption Standard (AES)
+
+** Data Enctyption Standard (DES)
+Propuesto en 1977 por el NIST (FIPS 46)
+Fue el esquema de cifrado más ampliamente usado
+El algoritmo en sí se denomina Data Encryption Algorithm (DEA)
+Fue retirado en mayo de 2005
+
+se retiro de 2005 porque era facil para caulquier hacker podia desencriptar la informacion
+
+descripcion del algoritmo DES: 
+• Tamaño de bloque de 64 bits
+• Clave de 56 bits
+• Red de Feistel con pequeñas variaciones
+• 16 rondas de procesamiento
+• El proceso de descifrado es esencialmente el mismo que el decifrado
+
+
+**Advanced Encryption Standard (AES)
+DES fue diseñado para una implementación hardware y no producía código eficiente
+Por eficiencia y seguridad, el tamaño de bloque debía ser mayor
+En 1997, el NIST lanzó una convocatoria para AES
+Debía tener una seguridad igual o mayor que 3DES y mejorar
+significativamente la eficiencia
+Debía usar cifrado simétrico de bloque, con un tamaño de bloque
+de 128 bits, y soportar claves de 128, 192 y 256 bits
+
+Finalmente, NIST seleccionó el algoritmo Rijndael
+Se publicó en 2001 (FIPS 1971)
+Los autores son los criptógrafos belgas Dr. Daemen y Dr. Rijmen
+
+
+El cifrado de bloque procesa un bloque de dato cada vez
+Para DES y 3DES, el tamaño de bloque es de 64 bits
+Para AES, el tamaño de bloque es de 128 bits
+
+**Electronic Codebook (ECB)
+• EI texto claro se procesa en bloques de bits y cada bloque se cifra usando la misma clave
+• Para una clave dada, hay un único texto cifrado para cada bloque de texto claro.
+De ahí el término "codebook".
+
+Para mensajes largos, puede no ser seguro.
+Si el mensaje es muy estructurado, un criptoanalista podría explotar patrones y repeticiones.
+
+
+**Cifrado simétrico de flujo
+• Se combinan los dígitos del texto claro con un flujo pseudoaleatorio de dígitos (flujo de claves).
+Normalmente, usando una XOR (cifrado aditivo binario).
+• En el cifrado de flujo síncrono, el flujo de claves se genera en función de la clave solamente
+• En el cifrado de flujo asíncrono (o auto-sincronizable), el flujo de claves se genera en función de Ia clave y de un
+número fijo de dígitos previos del texto cifrado.
+
+
+**Algoritmo RC4
+Diseñado en 1987 por Ron Rivest para RSA Security
+• Se mantuvo como secreto comercial, hasta que fue publicado de manera anónima en septiembre de 1994
+• Cifrado de flujo síncrono
+Permutación aleatoria con tamaño de clave variable de 1 a 256 bytes (8 a 2048 bits) y orientado a byte
+
+Usado en SSL/TLS, WEP y WPA
+Actualmente obsoleto
+Desde febrero de 2015, su uso está prohibido en TLS (RFC 74651)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
